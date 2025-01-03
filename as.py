@@ -1,15 +1,13 @@
-# Import necessary libraries
+import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
-from sklearn.metrics import roc_auc_score, accuracy_score, classification_report, confusion_matrix
+from sklearn.metrics import roc_auc_score, classification_report, confusion_matrix
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from imblearn.over_sampling import RandomOverSampler
-import warnings
 
 # Suppress warnings
 warnings.filterwarnings('ignore')
